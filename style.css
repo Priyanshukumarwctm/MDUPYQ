@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+
+
+.main_box{
+    position: fixed;
+    height: 100vh;
+
+}
+
+.btn_one i{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    left: 90vw;
+    top: 20px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.sidebar_menu .btn_two i{
+    color: black;
+    font-size: 40px;
+    line-height: 60px;
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s linear;
+
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 60px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 10px 20px;
+
+}
+
+.sidebar_menu .menu i,a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 15%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    opacity: 0.5;
+    padding: 0 5px;
+    font-size: 30px;
+
+}
+
+#check {
+    display: none;
+}
+
+.sidebar_menu  .menu li:hover{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.btn_one:hover{
+    font-size: 40px;
+}
+
+.btn_two{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(5);
+
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+
+#check:checked ~ .btn_one{
+    display: none;
+}
+
+
+
+
+.nav {
+    height: 120px;
+    width: 100%;
+    /* background-color: #ff9800; */
+    background-color: rgb(247, 209, 139);
+    color: black;
+    border-bottom: 15px solid orange;
+}
+
+.logo{
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-top: 15px;
+}
+
+.hero {
+    height: 50vw;
+    width: 100%;
+    background-image: url("mdu.png");
+    background-size: cover;
+    text-align: center;
+}
+
+.background-text{
+    color: rgb(255, 196, 0);
+    padding-top: 16vw;
+}
+
+.background-text h1{
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.background-text p{
+    font-size: 1.25vw;
+    font-weight: 700;
+    color: orange;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7vw 0.8vw;
+    margin-top: 2vw;
+    text-decoration: none;
+    background-color: #ff9800;
+    color: black;
+    border-radius: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    
+}
+
+.cta-button:hover{
+    box-shadow: 5px 5px 2px black;
+}
+
+.search{
+    width: 90%;
+    margin: 5vw;
+    border: 2px solid transparent;
+    display: flex;
+}
+.search-text input{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 50px 0 0 50px;
+}
+
+.search-icon{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ff9800;
+    border-radius: 0 50px 50px 0;
+    border: 2px solid black;
+}
+
+
+.parentContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.container{
+    height: 200px;
+    width: 520px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 10px;
+    display: flex;
+    background-color: rgb(252, 229, 185);    
+
+}
+
+.container img{
+    height: 180px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
+.main-view{
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.paper-name{
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+    
+}
+
+
+.main-view h3{
+    line-height: 2;
+    color: rgb(247, 4, 4);
+
+}
+
+
+.main-view button{
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff9800;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.main-view button:hover{
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+}
+
+
+footer {
+    background-color: #f8ba47;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 10px solid orange;
+}
+
+
+@media (max-width: 650px) {
+
+    .nav {
+        height: 100px;
+        border-bottom: 10px solid orange;
+    }
+
+    .logo{
+        font-size: 2.9vw;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+    .nav-links li{
+        height: 20px;
+        width: 55px;
+        margin-right: 0vh;
+    }
+    .background-text{
+        padding-top: 14vw;
+    }
+    .background-text h1{
+        font-size: 5vw;
+        font-weight: 900;
+    }
+
+    .background-text p{
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .cta-button {
+        padding: 1.2vw 2vw;
+        font-size: 3vw;
+    }
+
+    .btn_one i{
+        left: 80vw;
+        top: 15px;
+    }
+
+    .container{
+        height: 380px;
+        width: 400px;    
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .container img{
+        height: 180px;
+        width: 300px;
+    }
+        
+    
+    .main-view button{
+        height: 30px;
+        width:  150px;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
